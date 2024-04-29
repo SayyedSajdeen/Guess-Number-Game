@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <style>
+        .body{
+           background-size: cover;
+           background-image: url(back.jpg);
+           background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <script>
+       setTimeout(()=>{
+        let gameNum = 7;
+        let userNum = prompt("Guess The Game No. From 0 Upto 100");
+        while (userNum != gameNum) {
+            userNum = prompt("You Entered Wrong Number!, Guess The Again");
+        }
+        alert("Congratulation's Number Matched");
+       },3000)
+    </script>
+</body>
+
+</html>
